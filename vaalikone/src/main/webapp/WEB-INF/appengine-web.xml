@@ -7,6 +7,12 @@
 
   <system-properties>
     <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    <property name="drivername" value="com.mysql.jdbc.Driver"/>
+    <property name="localusername" value="paavo"/>
+    <property name="localpassword" value="murtovarma"/>
+    <property name="databasename" value="database1"/>
+    
   </system-properties>
+  
 
 </appengine-web-app>
