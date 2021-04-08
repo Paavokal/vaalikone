@@ -1,0 +1,2 @@
+# vaalikone
+Kouluprojekti
