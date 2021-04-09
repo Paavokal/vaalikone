@@ -15,7 +15,7 @@
     <div style="text-align: center">
         <h1>Vaalikone hallinta</h1>
         <br><br>
-        <a href="/kysymykset">Kysymykset</a>
+        <a href="/naytakysymykset">kysymykset</a>
         <br><br>
         
        
