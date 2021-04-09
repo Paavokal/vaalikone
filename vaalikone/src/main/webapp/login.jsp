@@ -1,3 +1,9 @@
+<%
+  	if (session.getAttribute("user") != null) {
+    %><jsp:forward page="admin.jsp" /><%    
+	} 
+%>
+
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
