@@ -13,7 +13,7 @@ import data.User;
 @WebServlet("/login")
 public class UserLoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
- 
+
     public UserLoginServlet() {
         super();
     }
@@ -22,17 +22,28 @@ public class UserLoginServlet extends HttpServlet {
             throws ServletException, IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        
          
         UserDao userDao = new UserDao();
          
         try {
             User user = userDao.checkLogin(email, password);
             String destPage = "login.jsp";
-             
+            
+                        
             if (user != null) {
                 HttpSession session = request.getSession();
+                session.setMaxInactiveInterval(5*60);
                 session.setAttribute("user", user);
-                destPage = "admin.jsp";
+                
+                //Cookie testi "Welcome"
+                Cookie message = new Cookie("message", "Welcome");
+                response.addCookie(message);
+    
+
+
+                destPage = "/admin/admin.jsp";
+                
             } else {
                 String message = "Invalid email/password";
                 request.setAttribute("message", message);

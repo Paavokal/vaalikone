@@ -26,6 +26,19 @@ public class KysymysDao {
 			//do nada
 		}
 	}
+	public ArrayList<Kysymys> addKysymys(Kysymys f) {
+		try {
+			String sql="insert into kysymykset (kysymys,id) values(?,?)";
+			PreparedStatement pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, f.getKysymys());
+			pstmt.setInt(2, f.getId());
+			pstmt.executeUpdate();
+			return readAllKysymys();
+		}
+		catch(SQLException e) {
+			return null;
+		}
+	}
 	
 
 	public ArrayList<Kysymys> readAllKysymys() {

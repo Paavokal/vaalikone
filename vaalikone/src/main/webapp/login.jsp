@@ -1,6 +1,6 @@
 <%
   	if (session.getAttribute("user") != null) {
-    %><jsp:forward page="admin.jsp" /><%    
+    %><jsp:forward page="/admin/admin.jsp" /><%    
 	} 
 %>
 

@@ -1,7 +1,6 @@
 package app;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,18 +12,23 @@ import javax.servlet.http.HttpServletResponse;
 import dao.KysymysDao;
 import data.Kysymys;
 
-
-@WebServlet("/naytakysymykset")
-public class NaytaKysymykset extends HttpServlet {
+/**
+ * Servlet implementation class ReadToUpdate
+ */
+@WebServlet("/getupdate")
+public class GetUpdateKysymys extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private KysymysDao kysymysdao = null;
 	
-	@Override
+	private KysymysDao kysymysdao;
+	
 	public void init() {
 		kysymysdao = new KysymysDao();
 	}
        
-    public NaytaKysymykset() {
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public GetUpdateKysymys() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,16 +37,15 @@ public class NaytaKysymykset extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ArrayList<Kysymys> list=null;
+		// TODO Auto-generated method stub
+		String id=request.getParameter("id");
+		Kysymys f=null;
 		if (kysymysdao!=null) {
-			list=kysymysdao.readAllKysymys();
+			f=kysymysdao.readKysymys(id);
 		}
-		else {
-			System.out.println("No connection to database");
-		}
-		request.setAttribute("kysymyslist", list);
+		request.setAttribute("kysymys", f);
 		
-		RequestDispatcher rd=request.getRequestDispatcher("/admin/kysymykset.jsp");
+		RequestDispatcher rd=request.getRequestDispatcher("/admin/editkysymys.jsp");
 		rd.forward(request, response);
 	}
 }
