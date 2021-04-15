@@ -17,34 +17,36 @@
 </head>
 <body>
 <div class="container">
-<h2>VÄITTÄMÄT</h2>
+<h1>Vaalikoneen väittämät</h1><br>
 
 
 <c:forEach var="kysymys" items="${requestScope.kysymyslist}" >
 
 
 <div class="kysymys ${kysymys.id}" >
-${kysymys.id}. ${kysymys.kysymys}<br>
+<h3>${kysymys.id}. ${kysymys.kysymys}</h3><br>
+
 <div class="radio-label-vertical-wrapper">
     <div class="form-group">
       <label class="radio-label-vertical">
         <input type="radio" name="radio-${kysymys.id}" value="1" required>En ole samaa mieltä</label>
       <label class="radio-label-vertical">
-        <input type="radio" name="radio-${kysymys.id}" value="2" required>Jokseenkin eri mieltä</label>
+        <input type="radio" name="radio-${kysymys.id}" value="2" required>Osittain eri mieltä</label>
       <label class="radio-label-vertical">
         <input type="radio" name="radio-${kysymys.id}" value="3" required>En osaa sanoa</label>
       <label class="radio-label-vertical">
-        <input type="radio" name="radio-${kysymys.id}" value="4" required>Jokseenkin samaa mieltä</label>
+        <input type="radio" name="radio-${kysymys.id}" value="4" required>Osittain samaa mieltä </label>
       <label class="radio-label-vertical">
         <input type="radio" name="radio-${kysymys.id}" value="5" required>Olen täysin samaa mieltä</label>
 
     </div>
   </div>
 
-
-<a href='/poista?id=${kysymys.id}'>delete</a> <a href='/getupdate?id=${kysymys.id}'>update</a>
-</div>
 <br>
+<a class="ud" href='/poista?id=${kysymys.id}'>poista</a> <a class="ud" href='/getupdate?id=${kysymys.id}'>päivitä</a>
+</div>
+<br><br>
+<hr>
 </c:forEach>
 
 

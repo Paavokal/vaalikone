@@ -14,9 +14,9 @@
     <div style="text-align: center">
         <h1>Vaalikone hallinta</h1>
         <br><br>     
-        <a href="/naytakysymykset">NÄYTÄ KYSYMYKSET</a>
+        <a href="/naytakysymykset">Näytä kysymykset</a>
         <a href="/admin/lisaakysymys.jsp">Lisää kysymys</a>
-        <br><br>
+        <br><br><br>
         
         <table>
 		<tr><th>User</th> <th>Email</th></tr>
@@ -45,7 +45,7 @@
         
         
         
-        <a href="/logout" name='logoutlink'>Logout</a>
+        <a href="/logout" class='logoutlink'>Logout</a>
     </div>
 </body>
 </html>

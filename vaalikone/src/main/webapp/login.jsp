@@ -13,10 +13,11 @@
 
 <meta charset="utf-8">
 <title>Login</title>
+<%@ include file="/parts/header.jsp" %>  
 </head>
 <body>
     <div style="text-align: center">
-        <h1>Admin Login</h1>
+        <h2 style=>Admin Login</h2>
         <form action="login" method="post">
             <label for="email">Email:</label>
             <input name="email" size="30" />
