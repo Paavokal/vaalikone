@@ -14,8 +14,8 @@
     <div style="text-align: center">
         <h1>Vaalikone hallinta</h1>
         <br><br>     
-        <a href="/naytakysymykset">Näytä kysymykset</a>
-        <a href="/admin/lisaakysymys.jsp">Lisää kysymys</a>
+        <a href="/naytakysymykset">Näytä väittämät</a>
+        <a href="/admin/lisaakysymys.jsp">Lisää väittämä</a>
         <br><br><br>
         
         <table>

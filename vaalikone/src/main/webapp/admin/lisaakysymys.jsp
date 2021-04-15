@@ -14,11 +14,11 @@
 
 </head>
 <body>
-<h2>Lisää kysymys</h2>
+<h1>Lisää Väittämä</h1>
 <form action='/lisaa' method='post'>
-Kysymys id: <input type='text' name='id' value=""><br> 
-Kysymys<br>
-<textarea name="kysymys" rows="10" cols="80">Kirjoita tähän kysymys</textarea>
+Väittämä id: <input type='text' name='id' value=""><br> 
+Väittämä<br>
+<textarea name="kysymys" rows="10" cols="80">Kirjoita tähän väittämä</textarea>
 <br><br>
 <input type='submit' name='ok' value='Send'> 
 </form>
