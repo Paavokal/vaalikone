@@ -14,10 +14,10 @@
 
 </head>
 <body>
-<h2>Muokkaa kysymystä</h2>
+<h2>Muokkaa väittämää</h2>
 <form action='update' method='post'>
-Kysymys id: <input type='text' name='id' value='${requestScope.kysymys.id}' readonly><br> 
-Kysymys: <input type='text' name='kysymys' value='${requestScope.kysymys.kysymys}'><br>
+Väittämä id: <input type='text' name='id' value='${requestScope.kysymys.id}' readonly><br> 
+Väittämä: <input type='text' name='kysymys' value='${requestScope.kysymys.kysymys}'><br>
 <input type='submit' name='ok' value='Send'> 
 </form>
 </body>
