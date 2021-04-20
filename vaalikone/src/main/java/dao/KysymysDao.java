@@ -33,11 +33,12 @@ public class KysymysDao {
 			pstmt.setString(1, f.getKysymys());
 			pstmt.setInt(2, f.getId());
 			pstmt.executeUpdate();
-			return readAllKysymys();
+			
 		}
 		catch(SQLException e) {
-			return null;
+			
 		}
+		return readAllKysymys();
 	}
 	
 
@@ -65,11 +66,12 @@ public class KysymysDao {
 			pstmt.setString(1, f.getKysymys());
 			pstmt.setInt(2, f.getId());
 			pstmt.executeUpdate();
-			return readAllKysymys();
+		
 		}
 		catch(SQLException e) {
-			return null;
+			
 		}
+		return readAllKysymys();
 	}
 	public ArrayList<Kysymys> deleteKysymys(String id) {
 		try {
@@ -77,11 +79,12 @@ public class KysymysDao {
 			PreparedStatement pstmt=conn.prepareStatement(sql);
 			pstmt.setString(1, id);
 			pstmt.executeUpdate();
-			return readAllKysymys();
+		
 		}
 		catch(SQLException e) {
-			return null;
+			
 		}
+		return readAllKysymys();
 	}
 
 	public Kysymys readKysymys(String id) {

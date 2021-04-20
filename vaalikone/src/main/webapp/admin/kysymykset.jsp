@@ -31,11 +31,11 @@
       <label class="radio-label-vertical">
         <input type="radio" name="radio-${kysymys.id}" value="1" required>En ole samaa mieltä</label>
       <label class="radio-label-vertical">
-        <input type="radio" name="radio-${kysymys.id}" value="2" required>Osittain eri mieltä</label>
+        <input type="radio" name="radio-${kysymys.id}" value="2" required>Lähes eri mieltä</label>
       <label class="radio-label-vertical">
         <input type="radio" name="radio-${kysymys.id}" value="3" required>En osaa sanoa</label>
       <label class="radio-label-vertical">
-        <input type="radio" name="radio-${kysymys.id}" value="4" required>Osittain samaa mieltä </label>
+        <input type="radio" name="radio-${kysymys.id}" value="4" required>Lähes samaa mieltä </label>
       <label class="radio-label-vertical">
         <input type="radio" name="radio-${kysymys.id}" value="5" required>Olen täysin samaa mieltä</label>
 
@@ -44,6 +44,7 @@
 
 <br>
 <a class="ud" href='/poista?id=${kysymys.id}'>poista</a> <a class="ud" href='/getupdate?id=${kysymys.id}'>päivitä</a>
+<br>
 </div>
 <br><br>
 <hr>
@@ -56,7 +57,8 @@
 
 
 <br><br>
-<a href='/admin/admin'>Takaisin hallintasivulle</a>
+<a href='/admin/admin'>Takaisin hallintasivulle</a>  <a href="/admin/lisaakysymys.jsp">Lisää väittämä</a>
+<br><br>
 
 </div>
 </body>

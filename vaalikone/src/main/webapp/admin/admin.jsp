@@ -11,6 +11,7 @@
 
 </head>
 <body>
+<div class="container">
     <div style="text-align: center">
         <h1>Vaalikone hallinta</h1>
         <br><br>     
@@ -46,6 +47,8 @@
         
         
         <a href="/logout" class='logoutlink'>Logout</a>
+        <br><br>
+    </div>
     </div>
 </body>
 </html>

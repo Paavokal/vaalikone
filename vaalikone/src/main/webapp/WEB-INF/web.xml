@@ -41,6 +41,8 @@
         <url-pattern>/naytakysymykset</url-pattern>
         <url-pattern>/poista</url-pattern>
         <url-pattern>/update</url-pattern>
+        <url-pattern>/getupdate</url-pattern>
+
     </filter-mapping>
   
   

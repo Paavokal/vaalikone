@@ -16,6 +16,7 @@
 <%@ include file="/parts/header.jsp" %>  
 </head>
 <body>
+<div class="container">
     <div style="text-align: center">
         <h2 style=>Admin Login</h2>
         <form action="login" method="post">
@@ -28,6 +29,7 @@
             <br><br>           
             <button type="submit">Login</button>
         </form>
+    </div>
     </div>
 </body>
 

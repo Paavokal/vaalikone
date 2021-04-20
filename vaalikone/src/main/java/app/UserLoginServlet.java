@@ -33,7 +33,7 @@ public class UserLoginServlet extends HttpServlet {
                         
             if (user != null) {
                 HttpSession session = request.getSession();
-                session.setMaxInactiveInterval(5*60);
+                session.setMaxInactiveInterval(5*60);       //session 5min
                 session.setAttribute("user", user);
                 
                 //Cookie testi "Welcome"
