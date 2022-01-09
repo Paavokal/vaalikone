@@ -8,9 +8,9 @@
   <system-properties>
     <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
     <property name="drivername" value="com.mysql.jdbc.Driver"/>
-    <property name="localusername" value="paavo"/>
-    <property name="localpassword" value="murtovarma"/>
-    <property name="databasename" value="database1"/>
+    <property name="localusername" value="xxxxxxxx"/>
+    <property name="localpassword" value="xxxxxx"/>
+    <property name="databasename" value="xxxxxxx"/>
     
   </system-properties>
   
